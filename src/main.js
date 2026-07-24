@@ -255,22 +255,9 @@ const renderer = new THREE.WebGLRenderer({
 })
 renderer.setPixelRatio(window.devicePixelRatio)
 
-// #region agent log
-fetch('http://127.0.0.1:7850/ingest/0c1f0efb-9c3f-4dbd-8308-1dd1b824c3ae',{method:'POST',headers:{'Content-Type':'application/json','X-Debug-Session-Id':'ae8d36'},body:JSON.stringify({sessionId:'ae8d36',runId:'pre-fix',hypothesisId:'E',location:'main.js:after-renderer',message:'WebGL renderer created',data:{hasContext:!!renderer.getContext(),sceneFrameW:sceneFrame?.clientWidth,sceneFrameH:sceneFrame?.clientHeight,canvasClientW:canvas?.clientWidth,canvasClientH:canvas?.clientHeight,layoutClass:layout?.className},timestamp:Date.now()})}).catch(()=>{});
-// #endregion
-
 function resizeRenderer() {
   const width = sceneFrame.clientWidth
   const height = sceneFrame.clientHeight
-  // #region agent log
-  if (!window.__dbgResizeCount) window.__dbgResizeCount = 0
-  window.__dbgResizeCount += 1
-  if (window.__dbgResizeCount <= 15 || window.__dbgResizeCount % 25 === 0) {
-    const layoutCs = layout ? getComputedStyle(layout) : null
-    const sceneCs = getComputedStyle(sceneFrame)
-    fetch('http://127.0.0.1:7850/ingest/0c1f0efb-9c3f-4dbd-8308-1dd1b824c3ae',{method:'POST',headers:{'Content-Type':'application/json','X-Debug-Session-Id':'ae8d36'},body:JSON.stringify({sessionId:'ae8d36',runId:'pre-fix',hypothesisId:'C',location:'main.js:resizeRenderer',message:'resize tick',data:{n:window.__dbgResizeCount,width,height,canvasW:canvas.width,canvasH:canvas.height,layoutH:layoutCs?.height,sceneH:sceneCs?.height,sceneOverflow:sceneCs?.overflow,bodyOverflow:getComputedStyle(document.body).overflow,coolerCssApplied:layoutCs?.display==='flex'&&layoutCs?.height?.includes('px')},timestamp:Date.now()})}).catch(()=>{});
-  }
-  // #endregion
   renderer.setSize(width, height)
   camera.aspect = width / height
   camera.updateProjectionMatrix()

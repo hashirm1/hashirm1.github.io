@@ -63,8 +63,9 @@ body {
 }
 
 .layout.layout--scan-active {
-  --scene-size: 100vh;
-  --info-width: calc(100vw - 100vh);
+  /* Narrower logbook panel; scene fills the rest */
+  --info-width: clamp(240px, 22vw, 340px);
+  --scene-size: calc(100vw - var(--info-width));
 }
 
 .layout.layout--scan-active .scene-frame {
