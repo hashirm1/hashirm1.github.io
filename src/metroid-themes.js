@@ -1,0 +1,87 @@
+/** Metroid Prime visor / logbook palette references per node */
+export const METROID_THEMES = {
+  home: {
+    id: 'home',
+    accent: '#5ec8f2',
+    accentHex: 0x5ec8f2,
+    accentBright: '#9ee8ff',
+    accentDim: '#1e4a66',
+    accentSecondary: '#3a8fb8',
+    bg: '#060c14',
+    bgGradient: 'radial-gradient(ellipse at 30% 20%, #0f2840 0%, #060c14 55%, #020408 100%)',
+    category: 'COMBAT VISOR',
+    logTitle: 'SHIP SYSTEMS',
+    scanStatus: 'SYSTEM ONLINE',
+    panelText:
+      "HOME: You're already in the home section buddy. Although I just added this because more nodes that connect to the sphere looks cooler, so that's on me.",
+  },
+  photos: {
+    id: 'photos',
+    accent: '#b47aff',
+    accentHex: 0xb47aff,
+    accentBright: '#ddb8ff',
+    accentDim: '#4a2868',
+    accentSecondary: '#e879f9',
+    bg: '#0c0818',
+    bgGradient: 'radial-gradient(ellipse at 70% 30%, #2a1448 0%, #0c0818 50%, #050308 100%)',
+    category: 'SCAN VISOR',
+    logTitle: 'IMAGE ARCHIVE',
+    scanStatus: 'DOWNLOAD READY',
+    panelText:
+      'PHOTOS: See my very limited and very amateur photography portfolio of the many places I\'ve visited. I\'ve got all the metadata there too so you can see how I shot them, pretty neat I guess.',
+  },
+  project: {
+    id: 'project',
+    accent: '#ff5522',
+    accentHex: 0xff5522,
+    accentBright: '#ff8866',
+    accentDim: '#661a0a',
+    accentSecondary: '#ffaa44',
+    bg: '#140808',
+    bgGradient: 'radial-gradient(ellipse at 50% 0%, #3a1208 0%, #140808 55%, #080404 100%)',
+    category: 'SCAN VISOR',
+    logTitle: 'MISSION CRITICAL',
+    scanStatus: 'PRIORITY TARGET',
+    panelText:
+      'PROJECT: See all the projects I\'ve worked on / am currently working on. Any publically available and open source projects will have their GitHub repo linked there.',
+  },
+  bio: {
+    id: 'bio',
+    accent: '#d4af37',
+    accentHex: 0xd4af37,
+    accentBright: '#f0d878',
+    accentDim: '#5c4a18',
+    accentSecondary: '#8b7355',
+    bg: '#100e0a',
+    bgGradient: 'radial-gradient(ellipse at 20% 80%, #2a2210 0%, #100e0a 50%, #060504 100%)',
+    category: 'SCAN VISOR',
+    logTitle: 'CHOZO ARTIFACT',
+    scanStatus: 'LORE DECODED',
+    panelText:
+      'BIO: Learn about me on my (kinda boring) main page. I\'ve listed all my forms of contact, passions, and projects there if you want a simple, non-weird way to view it all in one place.',
+  },
+  blog: {
+    id: 'blog',
+    accent: '#5dffa8',
+    accentHex: 0x5dffa8,
+    accentBright: '#9cffcc',
+    accentDim: '#1a4a32',
+    accentSecondary: '#3dcc88',
+    bg: '#060f0c',
+    bgGradient: 'radial-gradient(ellipse at 80% 70%, #0f2820 0%, #060f0c 55%, #030806 100%)',
+    category: 'SCAN VISOR',
+    logTitle: 'LOG BOOK ENTRY',
+    scanStatus: 'SCAN COMPLETE',
+    panelText:
+      'BLOG: See me talk about random topics that you probably couldn\'t care less about. I\'ll add to it whenever I feel like it.',
+  },
+}
+
+export const STANDBY_THEME = {
+  id: 'standby',
+  accent: '#5ec8f2',
+  accentHex: 0x5ec8f2,
+  category: 'SCAN VISOR',
+  logTitle: 'LOG BOOK',
+  scanStatus: 'AWAITING TARGET',
+}

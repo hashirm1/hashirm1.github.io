@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog — Talking into the Void</title>
+    <link rel="stylesheet" href="./blog.css" />
+  </head>
+  <body>
+    <div class="board-shell">
+      <div class="board-window">
+        <header class="board-titlebar">
+          <div class="board-titlebar__brand">
+            <span class="board-orb" aria-hidden="true"></span>
+            <a href="/blog/">Talking into the Void</a>
+          </div>
+          <nav aria-label="Board navigation">
+            <ul class="board-nav">
+              <li><a href="/">Home</a></li>
+              <li><a href="/photos/">Bio</a></li>
+              <li><a href="/projects/">Projects</a></li>
+              <li><a href="/blog/" class="is-active">Blog</a></li>
+              <li><a href="/" class="nav-sphere">Back to sphere</a></li>
+            </ul>
+          </nav>
+        </header>
+
+        <div class="tcat">
+          <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="/">root</a>
+            <span class="breadcrumb__sep">›</span>
+            <span>blog</span>
+          </nav>
+          <span>Threads sorted by date · newest first</span>
+        </div>
+
+        <div class="board-body">
+          <div class="board-main">
+            <div class="tag-filter" id="tag-filter"></div>
+
+            <div class="thread-table-wrap">
+              <table class="thread-table">
+                <thead>
+                  <tr>
+                    <th scope="col" style="width: 44px"></th>
+                    <th scope="col">Thread / Tags</th>
+                    <th scope="col" style="width: 100px">Author</th>
+                    <th scope="col" style="width: 140px">Date Posted</th>
+                  </tr>
+                </thead>
+                <tbody id="thread-list"></tbody>
+              </table>
+            </div>
+          </div>
+
+          <aside class="board-sidebar">
+            <div class="sidebox">
+              <div class="sidebox__head">Board Stats</div>
+              <div class="sidebox__body">
+                <div class="stat-line"><span>Threads</span><strong id="stat-threads">0</strong></div>
+                <div class="stat-line"><span>Authors</span><strong>1</strong></div>
+                <div class="stat-line"><span>Replies</span><strong>0</strong></div>
+              </div>
+            </div>
+
+            <div class="sidebox">
+              <div class="sidebox__head">Who's Online</div>
+              <div class="sidebox__body">
+                <p><span class="online-dot" aria-hidden="true"></span><strong>Hashir</strong> (admin)</p>
+                <p style="margin-top: 8px">Users online: 1 · Guests: ∞</p>
+              </div>
+            </div>
+          </aside>
+        </div>
+
+      </div>
+    </div>
+
+    <script type="module" src="./blog-index.js"></script>
+  </body>
+</html>

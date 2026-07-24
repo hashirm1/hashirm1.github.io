@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to the the blog</title>
+    <link rel="stylesheet" href="/blog/blog.css" />
+  </head>
+  <body class="post-page">
+    <div class="board-shell">
+      <div class="board-window">
+        <header class="board-titlebar">
+          <div class="board-titlebar__brand">
+            <span class="board-orb" aria-hidden="true"></span>
+            <a href="/blog/">Talking into the Void</a>
+          </div>
+          <nav aria-label="Board navigation">
+            <ul class="board-nav">
+              <li><a href="/">Home</a></li>
+              <li><a href="/photos/">Bio</a></li>
+              <li><a href="/projects/">Projects</a></li>
+              <li><a href="/blog/" class="is-active">Blog</a></li>
+              <li><a href="/" class="nav-sphere">Back to Selection</a></li>
+            </ul>
+          </nav>
+        </header>
+
+        <div class="toolbar">
+          <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="/">root</a>
+            <span class="breadcrumb__sep">›</span>
+            <a href="/blog/">blog</a>
+            <span class="breadcrumb__sep">›</span>
+            <span>Welcome to the board</span>
+          </nav>
+          <div class="toolbar-actions">
+            <a class="aero-btn" href="/blog/">« Back to Blog</a>
+          </div>
+        </div>
+
+        <div class="board-body" id="top">
+          <div class="board-main">
+            <!-- POSTBIT FRAMEWORK: copy this block for new posts; edit header + body only -->
+            <article class="postbit">
+              <aside class="postbit__user">
+                <div class="postbit__avatar" aria-hidden="true">HM</div>
+                <div class="postbit__username">Hashir</div>
+                <div class="postbit__rank">Administrator</div>
+                <div class="postbit__user-meta">
+                  <div>Join Date: <span data-author-join>—</span></div>
+                  <div>Posts: <span data-post-count>—</span></div>
+                  <div>Location: Michigan</div>
+                </div>
+              </aside>
+
+              <div class="postbit__content">
+                <header class="postbit__header">
+                  <h1 class="postbit__title">Welcome to the Blog</h1>
+                  <div class="postbit__header-meta">
+                    <span class="tag-pill tag--other">other</span>
+                    <span class="postbit__date">Fri, Jul 24, 2026</span>
+                  </div>
+                </header>
+
+                <div class="postbit__body">
+                  <p>
+                    Hello, I'm trying out making a personal blog, or at least more of a logbook for my thoughts
+                     and things I'm working on. For now, I made a pretty basic nostaligia-bait UI for the homepage,
+                      but I wanna try giving each and every blog post a unique style that fits the topic. Feels like
+                       it'll be a fun way to mess with UI which I don't do as much as I used to these days.
+                  </p>
+
+                  <div class="bbcode-quote">
+                    <span class="bbcode-quote__label">Originally posted by Hashir</span>
+                    Posts are written by me only even though the style is that of a public forum. 
+                    I just like the look of it not gonna lie.
+                  </div>
+
+                  <h3>How tags work (also testing subheadings)</h3>
+                  <ul>
+                    <li><strong>politics</strong> — opinions, news, civic stuff</li>
+                    <li><strong>creative</strong> — photography, film, writing</li>
+                    <li><strong>tech</strong> — coding projects, linux, development</li>
+                    <li><strong>sports</strong> — sports opinions</li>
+                    <li><strong>other</strong> — anything that doesn't fit a category</li>
+                  </ul>
+
+                  <p>
+                    Use the filters on the main blog page to narrow the thread list.
+                    New posts will get added to the site whenever I feel like writing.
+                  </p>
+
+                  <p>Thanks for stopping by!</p>
+                </div>
+
+                <footer class="postbit__footer">
+                  <span>Thread tools: view only</span>
+                  <a href="/blog/">Return to thread list</a>
+                </footer>
+              </div>
+            </article>
+
+            <div class="toolbar" style="margin-top: 14px; border: 1px solid var(--aero-border); border-radius: 8px;">
+              <span>End of thread</span>
+              <div class="toolbar-actions">
+                <a class="aero-btn aero-btn--ghost" href="#top">Jump to Top</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <script type="module" src="/blog/post-meta.js"></script>
+  </body>
+</html>
