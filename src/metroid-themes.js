@@ -43,7 +43,7 @@ export const METROID_THEMES = {
     logTitle: 'MISSION CRITICAL',
     scanStatus: 'PRIORITY TARGET',
     panelText:
-      'PROJECT: See all the projects I\'ve worked on / am currently working on. Any publically available and open source projects will have their GitHub repo linked there.',
+      'PROJECT: See all the projects I\'ve worked on / am currently working on. Any publicly available and open source projects will have their GitHub repo linked there.',
   },
   bio: {
     id: 'bio',
